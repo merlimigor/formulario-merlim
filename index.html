@@ -1,0 +1,96 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="titulo">
+    <h1 id="titulo">Cadastro de DEVs</h1>
+    <P id="subtitulo">Complete suas iformações</P>
+    <br>
+</div>
+
+<form>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required> 
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+    <div class="grupo2">
+        <div class="campo">
+            <label for="email"><Strong>Email</Strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label for="cpf"><Strong>CPF</Strong></label>
+            <input type="text" name="cpf" id="cpf" required>
+        </div>
+    </div>
+    <div class="campo box">
+        <label><strong>De qual lado da aplicação vc desenvolve?</strong></label>
+        <label>
+            <input id="aplicacao1" type="radio" name="devweb" value=>Front-end
+        </label>
+        <label>
+            <input id="aplicacao2" type="radio" name="devweb" value=>Back-end
+        </label>
+        <label>
+            <input id="aplicacao3" type="radio" name="devweb" value=>fullstack
+        </label>
+    </div>
+    <div class="campo">
+        <label for=""><strong>Senioridade</strong></label>
+        <select id="Senioridade">
+            <option selecter disabled value="">selecione</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+    </div>
+    <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+            <input type="checkbox" id="html" class="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" class="tecnologia1" name="tecnologia2" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" class="tecnologia1" name="tecnologia3" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="php" class="tecnologia1" name="tecnologia4" value="PHP">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="c" class="tecnologia1" name="tecnologia5" value="C#">
+            <label for="c">C#</label>
+            <input type="checkbox" id="python" class="tecnologia1" name="tecnologia6" value="Python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" class="tecnologia1" name="tecnologia7" value="Java">
+            <label for="java">Java</label>
+        </div>
+    </fieldset>
+    <div class="bloco">
+        <div class="caixa">
+            <br>
+            <label>Conte um pouco da sua experiência</label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+    </div>
+
+    <button onclick="inserirCPF()" class="botao" type="submit">Concluido</button>
+
+</form>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
